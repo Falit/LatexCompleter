@@ -1,0 +1,23 @@
+{
+	"name": "LatexCompleter",
+	"version": "0.0.0",
+	"author": [
+		"Falit Jain"
+	],
+	"url": "https://github.com/Falit/GSOC-W2L-MathAutoComplete",
+	"descriptionmsg": "Adding the Latex Snippets and Autocompletion",
+	"license-name": "MIT",
+	"type": "other",
+	"ResourceModules": {
+		"ext.LatexCompleter": {
+			"scripts": [
+                    "modules/ext.LatexCompleter.js"
+			]
+		}
+    },
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "LatexCompleter/modules"
+	},
+	"manifest_version": 1
+}
