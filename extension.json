@@ -8,16 +8,25 @@
 	"descriptionmsg": "Adding the Latex Snippets and Autocompletion",
 	"license-name": "MIT",
 	"type": "other",
+    "AutoloadClasses": {
+            "LatexCompleter" : "LatexCompleter.php",
+            "LatexCompleterHooks" :"LatexCompleter.hooks.php"
+    },
 	"ResourceModules": {
 		"ext.LatexCompleter": {
 			"scripts": [
-                    "modules/ext.LatexCompleter.js"
+                   modules/"LatexCompleter.js"
 			]
 		}
     },
 	"ResourceFileModulePaths": {
-		"localBasePath": "modules",
-		"remoteExtPath": "LatexCompleter/modules"
+		"localBasePath": "",
+		"remoteExtPath": "LatexCompleter"
 	},
+    "Hooks":{
+        "BeforePageDisplay": [
+            "LatexCompleterHooks::onBeforePageDisplay"
+        ]
+    },
 	"manifest_version": 1
 }
