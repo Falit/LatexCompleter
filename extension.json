@@ -15,7 +15,7 @@
 	"ResourceModules": {
 		"ext.LatexCompleter": {
 			"scripts": [
-                   modules/"LatexCompleter.js"
+                   "modules/LatexCompleter.js"
 			]
 		}
     },
